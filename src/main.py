@@ -21,8 +21,10 @@ def main():
                 game_running = False
 
         keys_pressed = pygame.key.get_pressed()
-        game.update(keys_pressed)
+        fl_end_game = game.update(keys_pressed)
         game.draw()
+
+        game_running = not fl_end_game
 
         pygame.display.update()
         clock.tick(FPS)
