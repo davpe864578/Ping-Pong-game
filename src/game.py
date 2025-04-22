@@ -11,8 +11,8 @@ class Game:
         
         self.background = BLACK
 
-        self.player1 = Player(self.screen, self.clock, 20, 20, 12, 75, 5, WHITE, pygame.K_DOWN, pygame.K_UP)
-        self.player2 = Player(self.screen, self.clock, 868, 20, 12, 75, 5, WHITE, pygame.K_s, pygame.K_w)
+        self.player1 = Player(self.screen, self.clock, 20, 20, 12, 75, 5, WHITE, pygame.K_s, pygame.K_w)
+        self.player2 = Player(self.screen, self.clock, 868, 20, 12, 75, 5, WHITE, pygame.K_DOWN, pygame.K_UP)
         self.ball = Ball(self.screen, self.clock, 450, 300, 7, 3, RED)
 
     def update(self, keys_pressed): 

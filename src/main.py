@@ -24,7 +24,8 @@ def main():
         fl_end_game = game.update(keys_pressed)
         game.draw()
 
-        game_running = not fl_end_game
+        if game_running:
+            game_running = not fl_end_game
 
         pygame.display.update()
         clock.tick(FPS)
